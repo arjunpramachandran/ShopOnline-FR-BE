@@ -10,7 +10,7 @@ require('dotenv').config()
 const secret_key = process.env.JWT_SECRET_KEY
 
 const cors = require('cors');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 app.use(cors({
     origin: 'http://localhost:5173', // Allow only your frontend origin
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
