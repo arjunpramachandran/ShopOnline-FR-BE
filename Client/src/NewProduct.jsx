@@ -22,7 +22,7 @@ const NewProdect = () => {
     try {
       const token = localStorage.getItem("token"); // Assuming token is stored in localStorage
 
-      const response = await fetch("http://localhost:3000/products", {
+      const response = await fetch("https://shoponline-be.onrender.com/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -39,7 +39,7 @@ const SignUp = () => {
             }
             // console.log(data)
 
-            const response = await axios.post('http://localhost:3000/user', data)
+            const response = await axios.post('https://shoponline-be.onrender.com/user', data)
             console.log(response, '===response');
             console.log("RESPONSE DATA:", response.data);
 

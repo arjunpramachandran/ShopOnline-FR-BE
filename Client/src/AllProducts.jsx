@@ -6,7 +6,7 @@ import axios from 'axios'
 const AllProducts = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:3000/products')
+        axios.get('https://shoponline-be.onrender.com/products')
         .then((response) => {
             setProducts(response.data);
         })
