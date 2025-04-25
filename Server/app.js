@@ -12,9 +12,9 @@ const secret_key = process.env.JWT_SECRET_KEY
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow only your frontend origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    origin: 'https://shoponline-fr.onrender.com', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 app.use(express.json())
