@@ -1,0 +1,50 @@
+.card-img-top{
+ width: 100px;
+  height: 300px;
+  scale: 0.8;
+  object-fit: contain;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card-img-top:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.menu-left li{
+  
+  font-size: 18px;
+  font-weight: 400;
+}
+.cart li{
+  list-style: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.cart{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.cart li button{
+  background-color: transparent;
+  border: transparent;
+  
+}
+
+.cartPage{
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.total{
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: solid 2px;
+}

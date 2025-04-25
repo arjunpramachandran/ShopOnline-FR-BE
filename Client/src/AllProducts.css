@@ -1,0 +1,139 @@
+.products h4{
+    font-weight: 200;
+}
+
+.offer{
+  position: relative;
+  padding: 20px;
+  
+  overflow: hidden;
+  border-radius: 20px;
+  padding-top: 50px;
+  background: linear-gradient(white, white) padding-box,
+  
+              
+}
+.offer::before{
+    content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #f06, rgb(235, 233, 232), rgb(248, 248, 248), rgb(255, 51, 51), rgb(255, 60, 0));
+  z-index: -1;
+  background-size: 400% 400%; /* Adjust for smooth transition */
+  animation: animate-border 5s ease infinite;
+}
+@keyframes animate-border {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+  }
+
+ .price{
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(15, 12, 13);
+ }
+ .mrpPrice{
+  font-style: italic;
+  text-decoration: line-through;
+  color: red;
+ }
+
+ .discount{
+  border-radius: 50%;
+  background-color: rgb(255, 118, 6);
+  color: white;
+  padding: 8px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  animation: moveImage 1.5s infinite;
+  
+ }
+
+ .offer .offer-time {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.offer .offer-time p {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  color: rgb(255, 60, 0);
+  font-weight: bold;
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0%, 50%, 100% {
+      opacity: 1;
+  }
+  25%, 75% {
+      opacity: 0;
+  }
+}
+.offer .offer-time ul {
+  gap: 0.5em;
+  list-style: none;
+ 
+ 
+}
+
+.offer .offer-time ul.time li {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  padding: 0.5em;
+  line-height: initial;
+  color: red;
+  background-color:rgb(233, 226, 226);
+  border-radius: 5px;
+ 
+}
+.flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer .offer-time ul.code li {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  padding-top: 0.5em;
+  line-height: initial;
+  color: rgb(36, 35, 35)
+}
+
+.offer .offer-time ul.time li:not(:last-child)::before {
+  content: ':';
+  position: absolute;
+  right: -0.4em;
+  color: white;
+}
+.deal{
+  display: flex;
+  align-items: center;
+}
+.deal img{
+ width: 200px;
+ animation: moveImage 1.5s infinite;
+ position: absolute;
+ right: 50%;
+ top: 10px;
+ 
+}
+@keyframes moveImage {
+  0% { transform:  scale(1.2); }
+  50% { transform:  scale(0.8); }
+  100% { transform:  scale(1.2); }
+}

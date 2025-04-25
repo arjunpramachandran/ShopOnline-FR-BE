@@ -1,0 +1,69 @@
+// const router = createBrowserRouter([
+//   {
+//     path:'/',
+//     element:<Root/>,
+//     errorElement:<ErrorPage/>,
+//     children:[
+//       {path:'/',element:<AllProducts/>},
+//       {path:'/products/:id', element:<ProductDetails/>},
+//       {path:'/men', element:<MenFashion/>},
+//       {path:'/women', element:<WomenFashion/>},
+//       {path:'/jewelery', element:<Jewelery/>},
+//       {path:'/electronics', element:<Electronics/>},
+//       {path:'/contact', element:<WomenFashion/>}
+      
+//     ]
+
+//   }
+// ])
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//    <RouterProvider router={router}/>
+//   </StrictMode>,
+// )
+
+
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import './index.css'
+// import App from './App.jsx'
+// import Root from './Root.jsx'
+// import ErrorPage from './ErrorPage.jsx'
+// import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import AllProducts from './AllProducts.jsx'
+// import ProductDetails from './ProductDetails.jsx'
+// import MenFashion from './MenFashion.jsx'
+// import WomenFashion from './WomenFashion.jsx'
+// import Electronics from './Electronics.jsx'
+// import Jewelery from './Jewelery.jsx'
+// import Login from './Login.jsx'
+
+
+
+// const router = createBrowserRouter([
+//   { path: '/login', element: <Login /> } ,
+//   {
+//     path: '/',
+//     element: <Root />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       { path: '/', element: <AllProducts /> },
+//       { path: '/products/:id', element: <ProductDetails /> },
+//       { path: '/men', element: <MenFashion /> },
+//       { path: '/women', element: <WomenFashion /> },
+//       { path: '/jewelery', element: <Jewelery /> },
+//       { path: '/electronics', element: <Electronics /> },
+//       { path: '/contact', element: <WomenFashion /> }
+//     ]
+//   }
+  
+// ]);
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <RouterProvider router={router} />
+//   </StrictMode>
+// );
